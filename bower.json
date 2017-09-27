@@ -1,0 +1,17 @@
+{
+  "name": "angular-todo",
+  "homepage": "https://github.com/lechien73/angularproject",
+  "authors": [
+    "Matt Rudge <matt.rudge@codeinstitute.net>"
+  ],
+  "description": "To do list project",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
