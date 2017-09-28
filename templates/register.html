@@ -4,12 +4,13 @@
             <div class="form-group">
                 <label>Name</label>
                 <input type="text" name="name" class="form-control" data-ng-model="user.username" required />
-                <span ng-show="registrationForm.name.$pristine" class="help-block">Your username is required</p>
+                <span data-ng-show="registrationForm.name.$invalid">Your username is required</span>
+                <p><span data-ng-show="registrationForm.name.$dirty">You have sullied my username field!</span></p>
             </div>
             <div class="form-group">
                 <label>Password</label>
-                <input type="password" name="password" class="form-control" data-ng-model="user.password" reqruired />
-                <span ng-show="registrationForm.password.$pristine" class="help-block">Your password is required</p>
+                <input type="password" name="password" class="form-control" data-ng-model="user.password" required />
+                <span ng-show="registrationForm.password.$invalid" class="help-block">Your password is required</span>
             </div>
             
             <button type="submit" class="btn btn-primary" data-ng-disabled="registrationForm.$invalid">Register</button>
